@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<!--OGP-->
+<meta name="ようこそ、和食の彩(いろどり）へ。四季折々の新鮮な食材を使った日本料理をお届けします。" content="This is an example of a meta description. This will often show up in search results.">
+<!--<meta property="og:url" content="http://www.mySite.com/">-->
+<meta property="og:title" content="和食の彩"/>
+<meta property="og:site_name" content="和食の彩">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja-JP">
+<meta property="og:image" content="irodori.jpg">
+<meta property="og:description" content="ようこそ、和食の彩(いろどり）へ。四季折々の新鮮な食材を使った日本料理をお届けします。"/>
+<meta name="twitter:card" content="summary" />
+<!--OGP-->
+<title>和食の彩</title>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="common.css">
+<!--favicon&touch icon-->
+<link href="icon_irodori.png" rel="icon" type="image/x-icon" />
+<link rel="apple-touch-icon" href="icon_irodori.png">
+<!--/favicon&touch icon-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+<header class="header">
+  <div> <a href="index.html" id="header-logo"> <img src="logo_irodori-yoko.png" alt="和食の彩（いろどり）"></a> </div>
+  <div id="nav-drawer">
+    <input id="nav-input" class="none" type="checkbox">
+    <label id="nav-open" for="nav-input"><span> </span></label>
+    <label id="nav-close" class="none" for="nav-input"></label>
+    <nav id="nav-content" class="header__navigation">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="lunch.html">昼の部</a></li>
+        <li><a href="dinner.html">夜の部</a></li>
+        <li><a href="store-information.html">店舗のご案内</a></li>
+        <li><a href="reservation.html">ご予約</a></li>
+        <li><a href="news.html">お知らせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="section-top">
+    <h1>ご予約</h1>
+    <div class="section-top__image"></div>
+  </section>
+  <section class="section-greeting">
+    <p><span>お</span>客様の大切なひとときを「和食の彩」でお過ごしいただくために、オンライン予約をご利用ください。<br>
+      以下のフォームから簡単にご予約いただけます。<br>
+      ご予約が確定しましたら、確認のメールをお送りいたします。</p>
+  </section>
+  <div class="section-calendar"> <img src="img_calendar.jpg" alt="カレンダー"> </div>
+  <form class="reservation-form" action="reservation.html">
+    <div class="reservation-form__input">
+    <p>
+      <label for="form_name">お名前</label>
+      <input id="form_name" type="text" placeholder="入力してください。">
+    </p>
+    <p>
+      <label for="form_date">日付</label>
+      <input type="date" value="">
+    </p>
+    <p>
+      <label for="form_time">時間</label>
+      <input type="time" value="">
+    </p>
+    <p>
+      <label for="form_people">人数</label>
+      <input min="1" max="50" type="number" value="" placeholder="入力してください。">
+    </p>
+    <p>
+      <label for="tel">電話番号</label>
+      <input type="tel" placeholder="入力してください。">
+    </p>
+    <p>
+      <label for="form_email">メールアドレス</label>
+      <input id="form_email" type="email" placeholder="入力してください。">
+    </p>
+      </div>
+    <div class="reservation-form__check">
+    <p>
+      <input class="reservation-form__policy" type="checkbox">
+     <label class="small-label" for="form-policy"> <a class="reservation-form__policy-link" href="">キャンセルポリシー</a>に同意する</label>
+    </p>
+    <p>
+      <input class="reservation-form__policy" type="checkbox">
+      <label class="small-label" for="form-policy"> <a class="reservation-form__policy-link" href="">プライバシーポリシー</a>に同意する</label>
+    </p>
+      </div>
+    <input class="inquiry-form__submit" type="submit" value="確認画面へ進む">
+  </form>
+</main>
+<p id="page-top"><a href="#">▲</a></p>
+<footer>
+  <nav class="footer-menu">
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="">昼の部</a></li>
+      <li><a href="">夜の部</a></li>
+      <li><a href="store-information.html">店舗のご案内</a></li>
+      <li><a href="">ご予約</a></li>
+      <li><a href="news.html">お知らせ</a></li>
+    </ul>
+  </nav>
+  <div class="footer-corporate">
+    <ul>
+      <li><a href="">会社概要</a></li>
+      <li><a href="">お問い合わせ</a></li>
+    </ul>
+  </div>
+  <small>Copyright © 和食の彩 All Rights Reserved.</small> </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+<script src="news.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+.slick-prev, .slick-next {
+  position: absolute;
+  z-index: 3;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  height: 25px;
+  width: 25px;
+}
+.slick-prev {
+  left: 2.5%;
+  transform: rotate(-135deg);
+}
+.slick-next {
+  right: 2.5%;
+  transform: rotate(45deg);
+}
+.choice-btn li {
+  cursor: pointer;
+  outline: none;
+  background: #333;
+  width: 25% !important;
+}
+.choice-btn li img {
+  opacity: 0.4;
+}
+.choice-btn li.slick-current img {
+  opacity: 1;
+}
