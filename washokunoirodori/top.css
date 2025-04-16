@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* CSS Document */
+.section-top {
+  position: relative;
+  line-height: 0;
+}
+.section-top h1 {
+  padding-top: 40px;
+  font-size: 2.2rem;
+  color: #fff;
+  text-shadow: 0 0 3px #00453d;
+  line-height: 4.4rem;
+  writing-mode: vertical-rl;
+  text-align: start;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  z-index: 600;
+}
+.top-slider {
+    position:relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+	height: 85vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+/*　背景画像設定　*/
+.slider-item01 {
+    background:url("img_top-1.jpg");
+}
+.slider-item02 {
+    background:url("img_top-2.jpg");
+}
+.slider-item03 {
+    background:url("img_top-3.jpg");
+}
+.slider-item {
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height:85vh;
+    background-repeat: no-repeat;/*背景画像をリピートしない*/
+    background-position: center;/*背景画像の位置を中央に*/
+    background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+}
+/*矢印の設定*/
+.slick-prev, .slick-next {
+    position: absolute;
+	z-index: 3;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #fff;/*矢印の色*/
+    border-right: 2px solid #fff;/*矢印の色*/
+    height: 25px;
+    width: 25px;
+}
+.slick-prev {/*戻る矢印の位置と形状*/
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+.slick-next {/*次へ矢印の位置と形状*/
+    right:2.5%;
+    transform: rotate(45deg);
+}
+/*ドットナビゲーションの設定*/
+.slick-dots {
+	position: relative;
+	z-index: 3;
+    text-align:center;
+	margin:-50px 0 0 0;/*ドットの位置*/
+}
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+.slick-dots button {
+    color: transparent;
+  border: none;
+    outline: none;
+    width:1px;/*ドットボタンのサイズ*/
+    height:12px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#fff;/*ドットボタンの色*/
+}
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+@media(min-width:1040px){
+  .slider-item {
+    background-position: bottom;
+}
+}
+@media(min-width:1040px) {
+  .section-top {
+    margin: 0 auto;
+  }
+  .section-top__image {
+    width: 100%;
+    background-size: 120%;
+    height: 600px;
+    background-position: 40% 80%;
+  }
+  .section-top h1 {
+    font-size: 4rem;
+    line-height: 7rem;
+    padding-top: 80px;
+    left: 20%;
+  }
+}
+.section-greeting__message {
+  padding: 40px 10px 40px;
+}
+body h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00453d;
+}
+body img,body video{
+  vertical-align: bottom;
+}
+.section-greeting p {
+  font-size: 1.2rem;
+  line-height: 4rem;
+  writing-mode: vertical-rl;
+  text-align: start;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.border {
+  border: solid 1px #b14c3d;
+  width: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.section-greeting video {
+  width: 90%;
+}
+@media(min-width:1040px) {
+  body h2 {
+    font-size: 3.2rem;
+    margin-bottom: 60px;
+  }
+  .section-greeting__message {
+    padding: 80px 10px 80px;
+  }
+  .border {
+    width: 40px;
+    margin-bottom: 60px;
+  }
+  .section-greeting p {
+    font-size: 2.4rem;
+    line-height: 8rem;
+  }
+  .section-greeting video {
+    max-width: 1040px;
+  }
+}
+.section-coursemenu {
+  padding: 40px 10px;
+}
+.section-coursemenu h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.section-coursemenu__button span {
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #333;
+  white-space: nowrap;
+}
+.section-coursemenu__button {
+  position: relative;
+}
+.section-coursemenu__button-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-coursemenu__button img {
+  height: 210px;
+  width: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.section-coursemenu__button:first-child {
+  margin-bottom: 10px;
+}
+@media(min-width:1040px) {
+  .section-coursemenu {
+    max-width: 1040px;
+    margin: 80px auto;
+  }
+  .section-coursemenu img {
+    width: 98%;
+    height: 350px;
+  }
+  .section-coursemenu__button-wrapper {
+    display: flex;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  .section-coursemenu h3 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+  .section-coursemenu__button span {
+    font-size: 1.8rem;
+  }
+  .section-coursemenu__button:first-child {
+    margin-bottom: 0px;
+  }
+}
+.section-store-information{
+  position: relative;
+}
+.section-store-information img{
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.section-store-information h2{
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media(min-width:1040px){
+  .section-store-information{
+    margin: 0 auto 40px;
+    max-width: 1040px;
+  }
+  .section-store-information h2{
+  top: 45%;
+}
+.section-store-information img{
+max-width: 1040px;
+  height: 300px;
+}
+}
+.section-news {
+  padding: 40px 10px;
+}
+.section-news img {
+  width: 30%;
+  object-fit: cover;
+  border: solid 1px #00453d;
+}
+.section-news li {
+  margin-bottom: 20px;
+}
+.section-news li:last-child {
+  margin-bottom: 40px;
+}
+.section-news ol li {
+  padding: 0 30px;
+}
+.section-news ol li a {
+  display: flex;
+}
+.section-news__sentence {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+  color: #333;
+  padding-left: 10px;
+}
+.section-news__sentence h3 {
+  color: #00453d;
+}
+.section-news__sentence p {
+  padding-top: 5px;
+}
+.section-news__sentence-none {
+  display: none;
+}
+.section-news__list {
+  font-size: 1.4rem;
+  color: #00453D;
+  border: solid #00453D;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+@media(min-width:1040px) {
+  .section-news {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  .section-news ol {
+    display: flex;
+  }
+  .section-news ol li a {
+    display: block;
+  }
+  .section-news ol li img {
+    width: 80%;
+  }
+  .section-news__sentence {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+  .section-news__sentence-none {
+    display: block;
+  }
+  .section-news h3 {
+    font-size: 1.8rem;
+  }
+  .section-news p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    padding-top: 15px;
+  }
+  .section-news__list {
+    font-size: 2.4rem;
+    border-radius: 30px;
+    padding: 4px 30px;
+  }
+}
+.bottom-slider img {
+  width: 100%;
+  height: auto;
+}
+.bottom-slider{
+  padding: 50px 0;
+}
+.bottom-slider li:nth-child(even){
+  padding-top: 30px;
+}
+.bottom-slider .slick-slide{
+  margin: 0 10px;
+}
+.bunner-company a img {
+  width: 70%;
+  padding: 40px 0;
+}
+@media(min-width:1040px) {
+  .bunner-company a img {
+    max-width: 600px;
+  }
+}
